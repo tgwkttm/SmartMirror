@@ -39,11 +39,11 @@ Python 3.7+
 
 ## Install Dependencies
 
-## #Virtual Environment
+### Virtual Environment
 
 A virtual environment was created using Python 3.11.2 to manage dependencies efficiently.
 
-## #To create and activate the virtual environment:
+### To create and activate the virtual environment:
 
 python3.11 -m venv smartmirror_env
 source smartmirror_env/bin/activate  # On macOS/Linux
