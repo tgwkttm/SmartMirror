@@ -1,11 +1,11 @@
 # SmartMirror
 Smart Mirror with facial recognition and emotion detection. 
 
-Project Overview
+##Project Overview
 
 This project is a Smart Mirror with facial recognition and emotion detection. The application allows users to log in using facial recognition, manage notes, view calendar events, and display detected emotions.
 
-Deliverables
+##Deliverables
 
 This README file describes the deliverables of the project, including:
 
@@ -15,7 +15,7 @@ Steps to build the application.
 
 Steps to install and launch the application.
 
-GitLab Repository
+##GitLab Repository
 
 Repository Address:
 
@@ -23,7 +23,7 @@ https://github.com/tgwkttm/SmartMirror
 
 This repository contains the entire source code except for compiled binaries.
 
-System Requirements
+##System Requirements
 
 Raspberry Pi 4
 
@@ -37,27 +37,27 @@ MQ135 (air quality sensor)
 
 Python 3.7+
 
-Install Dependencies
+##Install Dependencies
 
-Virtual Environment
+###Virtual Environment
 
 A virtual environment was created using Python 3.11.2 to manage dependencies efficiently.
 
-To create and activate the virtual environment:
+###To create and activate the virtual environment:
 
 python3.11 -m venv smartmirror_env
 source smartmirror_env/bin/activate  # On macOS/Linux
 smartmirror_env\Scripts\activate  # On Windows
 
-Update system packages:
+###Update system packages:
 
 sudo apt update && sudo apt upgrade -y
 
-Install Python and pip (if not installed):
+###Install Python and pip (if not installed):
 
 sudo apt install python3 python3-pip -y
 
-Install OpenCV:
+###Install OpenCV:
 
 pip install opencv-python
 
@@ -69,24 +69,24 @@ Install other required libraries:
 
 pip install numpy firebase-admin requests picamera2 imutils face-recognition tk tkcalendar psutil
 
-Firebase Configuration
+###Firebase Configuration
 
 Download the firebase_config.json file from Firebase Console.
 
 Place the file in the main project directory.
 
-How to Build and Run
+##How to Build and Run
 
 Clone the GitLab repository:
 
 git clone <repository address>
 cd <repository name>
 
-Run the application:
+###Run the application:
 
 python3 main.py
 
-How to Use
+##How to Use
 
 Login: Users can log in using email & password or facial recognition.
 
@@ -132,9 +132,9 @@ existing_user_window.py - Handles existing user login
 
 user_options_window.py - Provides user dashboard and options
 
-Common Issues & Solutions
+##Common Issues & Solutions
 
-Camera Not Connecting
+###Camera Not Connecting
 
 Make sure the camera drivers are installed:
 
@@ -142,13 +142,13 @@ sudo apt install libcamera-apps
 
 Restart Raspberry Pi.
 
-Face Not Recognized
+###Face Not Recognized
 
 Check if encodings.pickle contains data.
 
 Ensure proper lighting conditions.
 
-Firebase Not Connecting
+###Firebase Not Connecting
 
 Ensure firebase_config.json is correct.
 
@@ -156,7 +156,7 @@ Reinstall dependencies:
 
 pip install firebase-admin
 
-Conclusion
+##Conclusion
 
 This project is designed to display personalized information on a Smart Mirror using modern facial recognition and AI technologies.
 
