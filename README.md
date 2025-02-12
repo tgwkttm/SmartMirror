@@ -49,15 +49,15 @@ python3.11 -m venv smartmirror_env
 source smartmirror_env/bin/activate  # On macOS/Linux
 smartmirror_env\Scripts\activate  # On Windows
 
-## #Update system packages:
+### Update system packages:
 
 sudo apt update && sudo apt upgrade -y
 
-## #Install Python and pip (if not installed):
+### Install Python and pip (if not installed):
 
 sudo apt install python3 python3-pip -y
 
-## #Install OpenCV:
+### Install OpenCV:
 
 pip install opencv-python
 
@@ -69,7 +69,7 @@ Install other required libraries:
 
 pip install numpy firebase-admin requests picamera2 imutils face-recognition tk tkcalendar psutil
 
-## #Firebase Configuration
+### Firebase Configuration
 
 Download the firebase_config.json file from Firebase Console.
 
@@ -82,7 +82,7 @@ Clone the GitLab repository:
 git clone <repository address>
 cd <repository name>
 
-## #Run the application:
+### Run the application:
 
 python3 main.py
 
@@ -134,7 +134,7 @@ user_options_window.py - Provides user dashboard and options
 
 ## Common Issues & Solutions
 
-## #Camera Not Connecting
+### Camera Not Connecting
 
 Make sure the camera drivers are installed:
 
@@ -142,13 +142,13 @@ sudo apt install libcamera-apps
 
 Restart Raspberry Pi.
 
-## #Face Not Recognized
+### Face Not Recognized
 
 Check if encodings.pickle contains data.
 
 Ensure proper lighting conditions.
 
-## #Firebase Not Connecting
+### Firebase Not Connecting
 
 Ensure firebase_config.json is correct.
 
